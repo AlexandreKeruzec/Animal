@@ -1,7 +1,10 @@
 package animal.diet;
 
 import animal.Food;
+import animal.Meat;
 
-public class Carnivore implements Diet {
-	public void eat(Food food) {}
+public class Carnivore extends Diet {
+	public void eat(Meat food) {
+		eat((Food) food);
+	}
 }

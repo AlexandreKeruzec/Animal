@@ -2,7 +2,7 @@ package animal.diet;
 
 import animal.Food;
 
-public interface Diet {
-	public void eat(Food food);
+public abstract class Diet {
+	public void eat(Food food) {};
 
 }
