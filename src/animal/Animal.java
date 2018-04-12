@@ -8,7 +8,10 @@ public abstract class Animal extends Meat{
 	private float size;
 	private Diet diet;
 	
-	public void eat(Food food) {diet.eat(food);}
+	public void eat(Food food) {
+		System.out.print(getName() + " ");
+		diet.eat(food);
+		}
 	public void move() {}
 	
 	public Animal(String name, int age, float weight, float size, Diet diet) {
