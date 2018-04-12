@@ -1,12 +1,12 @@
 package animal.animals;
 
-import animal.diet.Omnivore;
+import animal.Animal;
+import animal.diet.Diet;
 
-public class Human extends Omnivore {
+public class Human extends Animal {
 
-	public Human(int age, float weight, float size, String name) {
-		super(age, weight, size, name);
-		// TODO Auto-generated constructor stub
+	public Human(int age, float weight, float size, String name, Diet diet) {
+		super(age, weight, size, name, diet);
 	}
 
 }

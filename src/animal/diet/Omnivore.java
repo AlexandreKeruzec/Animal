@@ -1,12 +1,7 @@
 package animal.diet;
 
-import animal.Animal;
+import animal.Food;
 
-public abstract class Omnivore extends Animal {
-
-	public Omnivore(int age, float weight, float size, String name) {
-		super(age, weight, size, name);
-		// TODO Auto-generated constructor stub
-	}
-
+public class Omnivore implements Diet {
+	public void eat(Food food) {}
 }

@@ -1,11 +1,12 @@
 package animal.animals;
 
-import animal.diet.Carnivore;
+import animal.Animal;
+import animal.diet.Diet;
 
-public class Hyena extends Carnivore {
+public class Hyena extends Animal {
 
-	public Hyena(int age, float weight, float size, String name) {
-		super(age, weight, size, name);
+	public Hyena(int age, float weight, float size, String name, Diet diet) {
+		super(age, weight, size, name, diet);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -1,20 +1,24 @@
 package animal;
 
-public abstract class Animal {
+import animal.diet.Diet;
+
+public abstract class Animal extends Food{
 	private int age;
 	private float weight;
 	private float size;
 	private String name;
+	private Diet diet;
 	
-	public void eat(Food food) {}
+	public void eat(Food food) {diet.eat(food);}
 	public void move() {}
 	
-	public Animal(int age, float weight, float size, String name) {
+	public Animal(int age, float weight, float size, String name, Diet diet) {
 		super();
 		this.age = age;
 		this.weight = weight;
 		this.size = size;
 		this.name = name;
+		this.diet = diet;
 	}
 	public int getAge() {
 		return age;
